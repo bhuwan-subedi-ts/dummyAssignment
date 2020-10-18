@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+      overflow: visible;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    left: 200px;
+    right: 200px;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #666;
+    padding: 0px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  header button{
+      border:5px solid blueviolet;
+      border-radius: 20px;
+    }
+  header ul li{
+      margin-right: 800px;
+      text-align: left;
+      border: 5px solid blueviolet;
+      border-radius: 20px;
+      padding:5px 20px;
+  }
+  header ul li a {
+      font-style: oblique;
+      font-size: large;
+      text-align: left;
+      color: white;
+  }
+  header ul li:hover{
+      background-color: black;
+  }
+  
+  /* Container for flexboxes */
+  section {
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  /* Style the navigation menu */
+  nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #ccc;
+    padding: 20px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Style the content */
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  article p{
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-style: italic;
+      font-weight: 300;
+  }
+  article h4{
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-style: italic;
+      font-weight: 400;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+  section nav ul li{
+      border: solid 2px blueviolet;
+      border-radius: 10px;
+      padding: 10px 50px 20px;
+  }
+  section nav ul li a{
+      text-align: center;
+      font-weight: 200;
+      font-style: italic;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: black;
+  }
+  section nav ul{
+      padding: 10px;
+      
+  }
+  section nav ul li:hover{
+      background-color: white;
+  }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
